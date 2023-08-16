@@ -48,6 +48,14 @@ for(int x = 0; x<200; x++) { // loop para rotação de meia circunferência
 delay(1000); // delay por 1 segundo 
 
 for(int x = 0; x<200; x++) { // loop para rotação de meia circunferência 
+  digitalWrite(StepW,HIGH);
+  delayMicroseconds(500);
+  digitalWrite(StepW,LOW); 
+  delayMicroseconds(500);
+ }
+delay(1000);// delay por 1 segundo 
+
+for(int x = 0; x<200; x++) { // loop para rotação de meia circunferência 
   digitalWrite(StepZ,HIGH);
   delayMicroseconds(500);
   digitalWrite(StepZ,LOW); 
